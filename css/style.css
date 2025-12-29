@@ -326,12 +326,16 @@ body.light hr.separator {
   text-decoration: none !important;
   position: relative;
   z-index: 1;
-  padding: 16px 70px 16px 35px;
+  padding: 16px 35px;
   font-size: 15px;
   font-weight: 600;
   color: #fff;
   background-color: transparent;
   outline: none !important;
+}
+
+.button:hover {
+  background-color: #72b626;
 }
 
 .button .button-text {

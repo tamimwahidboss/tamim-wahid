@@ -385,6 +385,11 @@ if( class_exists( 'CSF' ) ) {
             ),
         ),
       ),
+      array(
+          'id'    => 'form-shortcode',
+          'type'  => 'text',
+          'title' => 'Form Shortcode',
+      ),
     ),
   ));
   

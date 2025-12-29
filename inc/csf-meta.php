@@ -12,15 +12,6 @@ if (class_exists('CSF')) {
         'post_type' => 'portfolio',
     ));
 
-    // Create a portfolio showcase section
-    // CSF::createSection($prefix, array(
-    //     'title'  => 'Single Page Settings',
-    //     'fields' => array(
-    //         'id' => 'portfolio-single',
-    //         'title' => 'Portfolio Details',
-    //     ),
-    // ));
-
     // Create a portfolio slider section
     CSF::createSection($prefix, array(
         'title'  => 'Slider Settings',

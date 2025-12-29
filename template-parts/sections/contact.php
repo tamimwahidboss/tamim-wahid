@@ -51,32 +51,11 @@ $options = get_option('tw_portfolio');
 
             <!-- Contact Form Starts -->
             <div class="col-12 col-lg-8">
-            <form class="contactform" method="post" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>">
-                <input type="hidden" name="action" value="handle_contact_form"> <!-- Adds a hidden field for identifying the form -->
-                <div class="contactform">
-                    <div class="row">
-                        <div class="col-12 col-md-4">
-                            <input type="text" name="name" placeholder="YOUR NAME" required>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <input type="email" name="email" placeholder="YOUR EMAIL" required>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <input type="text" name="subject" placeholder="YOUR SUBJECT" required>
-                        </div>
-                        <div class="col-12">
-                            <textarea name="message" placeholder="YOUR MESSAGE" required></textarea>
-                            <button type="submit" class="button">
-                                <span class="button-text">Send Message</span>
-                                <span class="button-icon fa fa-send"></span>
-                            </button>
-                        </div>
-                        <div class="col-12 form-message">
-                            <span class="output_message text-center font-weight-600 text-uppercase"></span>
-                        </div>
-                    </div>
-                </div>
-            </form>
+                <?php
+                    echo do_shortcode(
+                        isset( $options['form-shortcode'] ) ? $options['form-shortcode'] : ''
+                    );
+                ?>
 
             </div>
             <!-- Contact Form Ends -->
