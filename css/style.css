@@ -326,7 +326,7 @@ body.light hr.separator {
   text-decoration: none !important;
   position: relative;
   z-index: 1;
-  padding: 16px 35px;
+  padding: 16px 70px 17px 35px;
   font-size: 15px;
   font-weight: 600;
   color: #fff;
@@ -372,7 +372,7 @@ body.light hr.separator {
   bottom: 0;
   width: 55px;
   height: 55px;
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-items: center;
   font-size: 19px;

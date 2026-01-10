@@ -52,7 +52,7 @@ $options = get_option( 'tw_portfolio' );
                 </ul>
             </div>
             <div class="col-12 mt-3">
-                <a class="button" href="<?php echo isset( $options['info-resume-link']['url'] ) ? esc_url( $options['info-resume-link']['url'] ) : '#'; ?>">
+                <a class="button" href="<?php echo isset( $options['info-resume-link']['url'] ) ? esc_url( $options['info-resume-link']['url'] ) : '#'; ?>" target="_blank">
                     <span class="button-text">
                         <?php echo isset( $options['info-resume-link']['text'] ) ? esc_html( $options['info-resume-link']['text'] ) : ''; ?>
                     </span>
